@@ -10,6 +10,7 @@ header {
   border-bottom: solid 1px;
   color: #f3735f;
 }
+
 header img {
   width: 150px;
   margin-top: 15px;
@@ -68,21 +69,26 @@ h3 {
 
 span {
   color: white;
+  font-size: 18px;
   background-color: #797b95;
   text-transform: uppercase;
   padding: 11px 50px 7px 50px;
   border-radius: 8px;
 }
+
 .image {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 5vw;
 }
 
 .image img {
-  width: 250px;
-  height: 250px;
+  width: 250vw;
+  height: 27vw;
+  overflow: hidden;
+  object-fit: cover;
   border-radius: 8px;
-  margin-top: 50px;
 }
 
 ul {
@@ -96,6 +102,36 @@ ul {
 footer {
   font-size: 10px;
   text-align: center;
-  margin-top: 50px;
+  padding-top: 20px;
   color: rgb(113, 113, 113);
+}
+
+/* ************************************* */
+/* *********** Media Queries *********** */
+/* ************************************* */
+
+/* Small devices 320 ===> 425 */
+@media (min-width: 320px) and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  span {
+    font-size: 13px;
+    padding: 8px 20px 7px 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* Extra extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
 }
